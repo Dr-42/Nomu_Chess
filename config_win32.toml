@@ -1,0 +1,11 @@
+[build]
+compiler = "g++"
+packages = ["Dr-42/Nomu_Engine, master"]
+
+[[targets]]
+name = "main"
+src = "./src/"
+include_dir = "./src"
+type = "exe"
+cflags = "-g -Wall -Isrc -std=c++17"
+libs = ""

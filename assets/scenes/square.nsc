@@ -1,0 +1,17 @@
+Assets:
+	[Shader]
+		sprite: assets/shaders/sprite_vert_shad.vs, assets/shaders/sprite_frag_shad.fs
+	[Texture]
+		square: assets/textures/Square.png
+Entities:
+	square:
+		[UISprite]
+			texture: square
+			shader: sprite
+			active: false
+			color: 1, 1, 1, 1
+		[Script]
+			script: Square
+			active: false
+		[Event_listener]
+			active: true

@@ -1,0 +1,28 @@
+Assets:
+	[Shader]
+		sprite: assets/shaders/sprite_vert_shad.vs, assets/shaders/sprite_frag_shad.fs
+	[Texture]
+		K: assets/textures/whiteKing.png
+		Q: assets/textures/whiteQueen.png
+		R: assets/textures/whiteRook.png
+		B: assets/textures/whiteBishop.png
+		N: assets/textures/whiteKnight.png
+		P: assets/textures/whitePawn.png
+		k: assets/textures/blackKing.png
+		q: assets/textures/blackQueen.png
+		r: assets/textures/blackRook.png
+		b: assets/textures/blackBishop.png
+		n: assets/textures/blackKnight.png
+		p: assets/textures/blackPawn.png
+Entities:
+	piece:
+		[UISprite]
+			texture: K
+			shader: sprite
+			active: false
+			color: 1, 1, 1, 1
+		[Script]
+			script: Piece
+			active: false
+		[Event_listener]
+			active: false
