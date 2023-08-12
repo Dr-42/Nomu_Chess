@@ -1,10 +1,10 @@
-#include <core/engine.h>
 #include <core/app.h>
+#include <core/engine.h>
 
 #include "game.h"
 
-int main(){
-    Nomu::App app {
+int main() {
+    Nomu::App app{
         nullptr,
         "Nomu Engine",
         800,
@@ -16,8 +16,7 @@ int main(){
         false,
         {0.0f, 0.0f},
         0.0f,
-        0.0f
-    };
+        0.0f};
 
     Nomu::Engine engine(&app);
 
@@ -28,6 +27,3 @@ int main(){
     engine.Run();
     return 0;
 }
-
-
-

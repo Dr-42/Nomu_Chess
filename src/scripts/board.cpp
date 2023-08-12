@@ -21,7 +21,7 @@ void Board::Init()
     CreateBoard();
     Board_l board;
     Chess::init_board(&board);
-    Chess::parse_fen(&board, "rnb1kbnr/pppp1p1p/5q2/8/2B1PppP/5N2/PPPP2P1/RNBQK2R w KQkq - 2 6"); 
+    Chess::parse_fen(&board, "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1");
     for(int i = 0; i < 8; i++){
         for(int j = 0; j < 8; j++){
             std::cout << board.cells[j][i].piece << "|";
@@ -77,9 +77,9 @@ void Board::CreateBoard(){
             square->GetComponent<Nomu::Transform>()->SetScale(glm::vec2(100, 100));
             square->GetComponent<Nomu::Transform>()->SetRotation(0);
             if((i+j)%2 == 0){
-                square->GetComponent<Nomu::UI_Sprite>()->SetColor(glm::vec4(0.8, 0.8, 0.8, 1));
+                square->GetComponent<Nomu::UI_Sprite>()->SetColor(glm::vec4(0.92, 0.92, 0.82, 1));
             }else{
-                square->GetComponent<Nomu::UI_Sprite>()->SetColor(glm::vec4(0.2, 0.2, 0.2, 1));
+                square->GetComponent<Nomu::UI_Sprite>()->SetColor(glm::vec4(0.46, 0.58, 0.33, 1));
             }
             square->GetComponent<Square>()->coordX = i;
             square->GetComponent<Square>()->coordY = j;
